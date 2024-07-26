@@ -1,0 +1,14 @@
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/bin/Release/net6.0/linux-x64/PutS3Object.deps.json
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/bin/Release/net6.0/linux-x64/PutS3Object.runtimeconfig.json
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/bin/Release/net6.0/linux-x64/PutS3Object.dll
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/bin/Release/net6.0/linux-x64/PutS3Object.pdb
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Release/net6.0/linux-x64/PutS3Object.csproj.AssemblyReference.cache
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Release/net6.0/linux-x64/PutS3Object.GeneratedMSBuildEditorConfig.editorconfig
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Release/net6.0/linux-x64/PutS3Object.AssemblyInfoInputs.cache
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Release/net6.0/linux-x64/PutS3Object.AssemblyInfo.cs
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Release/net6.0/linux-x64/PutS3Object.csproj.CoreCompileInputs.cache
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Release/net6.0/linux-x64/PutS3Object.dll
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Release/net6.0/linux-x64/refint/PutS3Object.dll
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Release/net6.0/linux-x64/PutS3Object.pdb
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Release/net6.0/linux-x64/PutS3Object.genruntimeconfig.cache
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Release/net6.0/linux-x64/ref/PutS3Object.dll

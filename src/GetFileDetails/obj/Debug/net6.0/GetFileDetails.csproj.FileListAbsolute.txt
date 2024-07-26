@@ -1,0 +1,14 @@
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/bin/Debug/net6.0/GetFileDetails.deps.json
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/bin/Debug/net6.0/GetFileDetails.runtimeconfig.json
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/bin/Debug/net6.0/GetFileDetails.dll
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/bin/Debug/net6.0/GetFileDetails.pdb
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Debug/net6.0/GetFileDetails.csproj.AssemblyReference.cache
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Debug/net6.0/GetFileDetails.GeneratedMSBuildEditorConfig.editorconfig
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Debug/net6.0/GetFileDetails.AssemblyInfoInputs.cache
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Debug/net6.0/GetFileDetails.AssemblyInfo.cs
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Debug/net6.0/GetFileDetails.csproj.CoreCompileInputs.cache
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Debug/net6.0/GetFileDetails.dll
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Debug/net6.0/refint/GetFileDetails.dll
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Debug/net6.0/GetFileDetails.pdb
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Debug/net6.0/GetFileDetails.genruntimeconfig.cache
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Debug/net6.0/ref/GetFileDetails.dll

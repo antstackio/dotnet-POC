@@ -1,0 +1,14 @@
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/bin/Release/net6.0/linux-x64/GetFileDetails.deps.json
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/bin/Release/net6.0/linux-x64/GetFileDetails.runtimeconfig.json
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/bin/Release/net6.0/linux-x64/GetFileDetails.dll
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/bin/Release/net6.0/linux-x64/GetFileDetails.pdb
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Release/net6.0/linux-x64/GetFileDetails.csproj.AssemblyReference.cache
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Release/net6.0/linux-x64/GetFileDetails.GeneratedMSBuildEditorConfig.editorconfig
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Release/net6.0/linux-x64/GetFileDetails.AssemblyInfoInputs.cache
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Release/net6.0/linux-x64/GetFileDetails.AssemblyInfo.cs
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Release/net6.0/linux-x64/GetFileDetails.csproj.CoreCompileInputs.cache
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Release/net6.0/linux-x64/GetFileDetails.dll
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Release/net6.0/linux-x64/refint/GetFileDetails.dll
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Release/net6.0/linux-x64/GetFileDetails.pdb
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Release/net6.0/linux-x64/GetFileDetails.genruntimeconfig.cache
+/Users/naveen/Documents/POC/dotnet-poc/src/GetFileDetails/obj/Release/net6.0/linux-x64/ref/GetFileDetails.dll
