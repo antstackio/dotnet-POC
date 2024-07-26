@@ -1,0 +1,150 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: 'SAM Template for dotnet-poc
+
+  '
+Parameters:
+  DBServer:
+    Description: The database server name
+    Type: String
+  DBName:
+    Description: The database name
+    Type: String
+  DBUser:
+    Description: The database user
+    Type: String
+  DBPassword:
+    Description: The database password
+    Type: String
+  DBPort:
+    Description: The database port
+    Type: String
+  TableName:
+    Description: The table name
+    Type: String
+Globals:
+  Function:
+    Timeout: 10
+    MemorySize: 128
+    LoggingConfig:
+      LogFormat: JSON
+Resources:
+  PutS3ObjectFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: PutS3Object::PutS3Object.Function::FunctionHandler
+      Runtime: dotnet6
+      CodeUri: PutS3ObjectFunction
+      Architectures:
+      - x86_64
+      MemorySize: 256
+      Timeout: 30
+      Policies:
+      - AWSLambdaBasicExecutionRole
+      - AmazonS3FullAccess
+      Environment:
+        Variables:
+          BucketName:
+            Ref: DotNetPOCBucket
+          TableName:
+            Ref: TableName
+          DBName:
+            Ref: DBName
+          DBServer:
+            Ref: DBServer
+          DBUser:
+            Ref: DBUser
+          DBPassword:
+            Ref: DBPassword
+          DBPort:
+            Ref: DBPort
+      Events:
+        PutS3ObjectApi:
+          Type: Api
+          Properties:
+            Path: /putObject
+            Method: post
+    Metadata:
+      SamResourceId: PutS3ObjectFunction
+  GetFileDetailsFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: GetFileDetails::GetFileRecord.Function::FunctionHandler
+      Runtime: dotnet6
+      CodeUri: GetFileDetailsFunction
+      Architectures:
+      - x86_64
+      MemorySize: 256
+      Timeout: 30
+      Policies:
+      - AWSLambdaBasicExecutionRole
+      Environment:
+        Variables:
+          TableName:
+            Ref: TableName
+          DBName:
+            Ref: DBName
+          DBServer:
+            Ref: DBServer
+          DBUser:
+            Ref: DBUser
+          DBPassword:
+            Ref: DBPassword
+          DBPort:
+            Ref: DBPort
+      Events:
+        GetFileDetailsApi:
+          Type: Api
+          Properties:
+            Path: /getFileDetails
+            Method: get
+    Metadata:
+      SamResourceId: GetFileDetailsFunction
+  DotNetPOCBucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      BucketName:
+        Fn::Sub: ${AWS::StackName}-file-bucket
+      VersioningConfiguration:
+        Status: Enabled
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: false
+        BlockPublicPolicy: false
+        IgnorePublicAcls: false
+        RestrictPublicBuckets: false
+  MainBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket:
+        Ref: DotNetPOCBucket
+      PolicyDocument:
+        Id: PublicReadPolicy
+        Version: '2012-10-17'
+        Statement:
+        - Sid: PublicReadForGetBucketObjects
+          Effect: Allow
+          Principal: '*'
+          Action: s3:GetObject
+          Resource:
+            Fn::Sub: arn:aws:s3:::${DotNetPOCBucket}/public-assets/*
+        - Sid: PublicWriteForPutBucketObjects
+          Effect: Allow
+          Principal: '*'
+          Action: s3:PutObject
+          Resource:
+            Fn::Sub: arn:aws:s3:::${DotNetPOCBucket}/public-assets/*
+  ApplicationResourceGroup:
+    Type: AWS::ResourceGroups::Group
+    Properties:
+      Name:
+        Fn::Sub: ApplicationInsights-SAM-${AWS::StackName}
+      ResourceQuery:
+        Type: CLOUDFORMATION_STACK_1_0
+  ApplicationInsightsMonitoring:
+    Type: AWS::ApplicationInsights::Application
+    Properties:
+      ResourceGroupName:
+        Ref: ApplicationResourceGroup
+      AutoConfigurationEnabled: 'true'
