@@ -1,0 +1,1 @@
+sam build && sam deploy --parameter-overrides DBServer="monorail.proxy.rlwy.net" DBPassword="vSYBqSJeNoPUsFyljqzbKoAVPwQEdsBf" DBName="railway" DBUser="root" DBPort="29810" TableName="S3Records"
